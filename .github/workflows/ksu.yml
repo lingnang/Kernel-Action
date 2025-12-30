@@ -19,7 +19,7 @@ jobs:
       uses: ./
       with:
           kernel-url: https://github.com/OnePlusOSS/android_kernel_5.10_oneplus_mt6983
-          kernel-dir: kernel
+          kernel-dir: kernel-5.10
           depth: 1
           vendor: true
           vendor-url: https://github.com/OnePlusOSS/android_kernel_modules_oneplus_mt6983
@@ -32,5 +32,4 @@ jobs:
           android-version: 12
           aosp-clang-version: r416183b
           nethunter: true
-          bbrplus: true
           anykernel3: true
