@@ -19,7 +19,7 @@ jobs:
       uses: ./
       with:
           kernel-url: https://github.com/OnePlusOSS/android_kernel_5.10_oneplus_mt6983
-          kernel-dir: vendor
+          kernel-dir: kernel-5.10
           depth: 1
           vendor: true
           vendor-url: https://github.com/OnePlusOSS/android_kernel_modules_oneplus_mt6983
