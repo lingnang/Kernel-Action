@@ -18,10 +18,14 @@ jobs:
     - name: Ksu CI
       uses: ./
       with:
-          kernel-url: https://github.com/Fyg369/mcd_kernel_oneplus_sdm845
-          kernel-dir: ksu
-          kernel-branch: mcd-OOS-R
-          config: mcd_ksu_defconfig
+          kernel-url: https://github.com/OnePlusOSS/android_kernel_5.10_oneplus_mt6983
+          kernel-dir: vendor
+          depth: 1
+          vendor: true
+          vendor-url: https://github.com/OnePlusOSS/android_kernel_modules_oneplus_mt6983
+          kernel-branch: oneplus/mt6983_v_15.0.0_ace_2v
+          vendor-branch: oneplus/mt6983_v_15.0.0_ace_2v
+          config: defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
